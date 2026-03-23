@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎访问企业信息化管理系统</title>
+    <title>欢迎访问登录页面</title>
     <link rel="stylesheet" href="css/reset.css"> <!-- 引入reset.css文件重置样式 -->
     <!--页内css样式-->
     <style>
@@ -79,7 +79,7 @@
             width: 150px; /*设置宽度为15px*/
             background-color: #547BD6; /*配置button按钮背景色*/
             border-radius: 20px; /*配置四角为圆角，度为20px*/
-            letter-spacing: 5px; /*设置字间距为5px*/
+            letter-spacing: 8px; /*设置字间距为5px*/
             font-size: 20px; /*设置字体大小为20px */
             color: #ffffff; /* 设置字体颜色为白色 */
             box-shadow: 0px 15px 25px -5px #000; /* 设置按钮阴影 */
@@ -98,15 +98,24 @@
 
         /*配置超链接的样式*/
         /*a:link：连接的平时状态，a:visited被点击过的链接状态，a:active处于被激活的链接状态*/
-        a:link, a:visited, a:active {
+        a:link, a:visited {
             color: #547BD6; /*配置链接颜色*/
             text-decoration: none; /*配置无任何装饰效果*/
+            letter-spacing: 1px;
+        }
+        a:active {
+            color: #547BD6; /*配置链接颜色*/
+            text-decoration: none; /*配置无任何装饰效果*/
+            letter-spacing: 1px;
         }
 
         /*配置鼠标放到链接上的样式*/
         a:hover {
+
             color: red; /*配置颜色为红色*/
             text-decoration: underline;  /*配置装饰效果为下划线*/
+            letter-spacing: 1px;
+
         }
     </style>
     <script>
@@ -133,14 +142,14 @@
         <div id="loginwrapper">
             <div id="loginwindow">
                 <div id="logininfo">
-                    <h2>系统账户登录</h2>
+                    <h1>系统账户登录</h1>
                     <div id="usernamewrapper">
-                        <label>账户名称</label>
+                        <label for="userName">账户名称</label>
                         <br/>
                         <input id="userName" name="userName" type="text"/>
                     </div>
                     <div id="passwordwrapper">
-                        <label>输入密码</label>
+                        <label for="password">输入密码</label>
                         <br/>
                         <input id="password" name="password" type="password"/>
                     </div>
